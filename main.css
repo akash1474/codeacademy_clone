@@ -108,6 +108,13 @@ body{
     width: 85%;
 }
 
+.button{
+    border:0;
+    background: none;
+    cursor: pointer;
+    transition: 250ms linear;
+}
+
 .section{
     width: 100%;
     height: 400px;
@@ -211,6 +218,7 @@ body{
     height: 40px;
     width: 100%; 
     margin-bottom: 10px;
+    padding: 15px 10px;
 }
 
 .form > label{
@@ -291,10 +299,10 @@ body{
     color: #fff;
 }
 
-/*.editor_right{
-    width: 350px;
+.editor_right{
+    max-width: 330px;
 }
-*/
+
 .editor_right > p{
     margin-bottom: 15px;
 }
@@ -315,10 +323,10 @@ body{
 .editor_buttons > button{
     border: none;
     background: none;
-    padding: 5px 15px;
+    padding: 5px 8px;
     color:var(--color-yellow);
     border-radius: 2px;
-    margin-right: 20px;
+    margin-right: 5px;
     cursor: pointer;
 }
 
@@ -330,27 +338,286 @@ body{
     border: 1px solid var(--color-yellow);
 }
 
+/*================== QUIZ SECTION ===================*/
 .quiz{
     background-color: var(--color-yellow);
+    display: flex;
+    justify-content: center;
 }
+
+.quiz > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.quiz .content_block > section{
+    width: 300px;
+}
+
+.quiz section header{
+    font-size: 30px;
+    font-family: "Poppins SemiBold";
+    margin-bottom: 15px;
+}
+
+.quiz img{
+    height: 300px;
+}
+
+.quiz p{
+    margin-bottom: 20px;
+}
+
+.quiz button{
+    padding: 10px 12px;
+    font-weight: bold;
+    border: 0;
+    background-color: var(--color-hyper);
+    color: #fff;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.quiz button:hover{
+    background-color: var(--color-hyper-400);
+}
+
+
+
+/*================== STORIES SECTION =================*/
 
 .stories{
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 550px;
 }
 
-.stats{
-    height: 200px;
+.stories .background{
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    z-index: -1;
+}
+
+.stories_body{
+    display: flex;
+    flex-direction: column;
+}
+
+.stories_body > p{
+    font-size: 30px;
+    font-family: "Poppins SemiBold";
+}
+
+.stories_body section{
+    display: flex;
+}
+
+
+.stories_body p + section{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 30px;
+    margin-top: -10px;
+}
+
+
+.stories_body section button{
+    font-family: "Poppins SemiBold";
+    /*background-color: var(--color-hyper);*/
+    color: var(--color-hyper);
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.stories_body section button:hover{
+    background-color: var(--color-hyper-400);
+    color: #fff;
+}
+
+.stories_body section > p{
+   font-size: 14px; 
+}
+
+.learner{
+    width: 300px;
+}
+
+.learner h4{
+    font-family: "Poppins SemiBold";
+}
+
+.learner  p{
+    font-size: 14px;
+    font-family: "Recursive Monospace Mono Linear";
+}
+
+.learner img{
+    height: 270px;
+    border: 1px solid #000;
+}
+
+/*================== STATS SECTION =================*/
+.stats_container{
+    height: 250px;
     background-color: var(--color-hyper);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.stats_container > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.stats_container header{
+    font-size: 35px;
+    color: #fff;
+    font-family: "Poppins SemiBold";
+    width: 280px;
+}
+
+.stats_container  p{
+    color: #fff;
+    font-family: "Poppins SemiBold";
+    font-size: 40px;
+}
+
+.stats_container .stats{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.stats .stat{
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    align-items: center;
+}
+
+
+.stats .stat p:last-child{
+    font-size: 15px;
+}
+
+
+/*================== EXPLORE SECTION =================*/
 
 .explore{
     background-color: var(--color-navy-800);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.explore > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.explore > img{
+    height: 300px;
+}
+
+.explore > *{
+    color: #fff;
+}
+
+.explore section img{
+    height: 50px;
+}
+
+.explore section{
+    width: 300px;
+    /*margin-right: 50px;*/
+}
+
+.explore section header{
+    font-size: 40px;
+    font-family: "Poppins SemiBold";
+    line-height: 1.4;
+}
+
+
+.explore section p{
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.explore button{
+    background-color: var(--color-yellow);
+    padding: 5px 10px;
+    font-family: "Poppins SemiBold";
+    border-radius: 2px;
+}
+
+
+.explore button:hover{
+    background-color: var(--color-yellow-400);
+}
+
+/*================== START FREE SECTION =================*/
 .start_free{
     background-color: var(--color-hyper);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+
+.start_free > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.start_free > *{
+    color: #fff;
+}
+
+.start_free img{
+    height: 300px;
+}
+
+.start_free section{
+    width: 300px;
+}
+
+.start_free  p{
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.start_free header{
+    font-size: 40px;
+    font-family: "Poppins Medium";
+}
+
+.start_free button{
+    background-color: var(--color-yellow);
+    padding: 5px 10px;
+    font-family: "Poppins SemiBold";
+    border-radius: 2px;
+}
+
+
+.start_free button:hover{
+    background-color: var(--color-yellow-400);
+}
+
+/*================== FOOTER SECTION =================*/
 .footer{
 
 }
